@@ -72,7 +72,6 @@
       </midi-instrument>
     </score-part>
   </part-list>
-  <!--=========================================================-->
   <part id="P1">
     <measure number="1" width="242">
       <print>
@@ -267,7 +266,6 @@
         <beam number="1">end</beam>
       </note>
     </measure>
-    <!--=======================================================-->
     <measure number="2" width="272">
       <print new-system="no"/>
       <note default-x="51">
@@ -511,7 +509,6 @@
         <beam number="1">end</beam>
       </note>
     </measure>
-    <!--=======================================================-->
     <measure number="3" width="165">
       <print new-system="no"/>
       <note default-x="51">
@@ -651,7 +648,6 @@
         <beam number="1">end</beam>
       </note>
     </measure>
-    <!--=======================================================-->
     <measure number="4" width="234">
       <print new-system="no"/>
       <note default-x="36">
@@ -971,7 +967,6 @@
         <beam number="1">end</beam>
       </note>
     </measure>
-    <!--=======================================================-->
     <measure number="5" width="177">
       <print new-system="no"/>
       <note default-x="54">
@@ -1132,5 +1127,4 @@
       </note>
     </measure>
   </part>
-  <!--=========================================================-->
 </score-partwise>

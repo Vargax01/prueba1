@@ -3,7 +3,7 @@ from lxml import etree
 doc = etree.parse('MozartPianoSonata.xml')
 raiz=doc.getroot()
 notas1=[]
-compas=str(raw_input("Dame número de compás: "))
+compas=str(raw_input("Dame número de compás de 1 a 5: "))
 for elem in raiz.find("part"):
     if elem.attrib["number"] == compas:
         notas=elem.findall("note/pitch/step")
