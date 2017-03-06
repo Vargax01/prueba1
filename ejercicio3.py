@@ -19,8 +19,19 @@ elif nota == "la":
 else:
     nota1="B"
 comp=False
+notas3=[]
 for elem in raiz.find("part"):
     if elem.attrib["number"] == compas:
         notas=elem.findall("note/pitch")
-        for nota1 in notas:
-            print nota1.text
+        for nota2 in notas:
+            if nota2.find("step").text == nota1 and nota2.find("alter") != None:
+                comp=True
+                notas3.append(nota2.find("step").text)
+            elif nota2.find("step").text == nota1:
+                notas3.append(nota2.find("step").text)
+if len(notas3) == 0:
+    print "La nota", nota, "no aparece en el compas", compas
+elif comp == False:
+    print "La nota", nota, "no esta alterada en el compás", compas
+else:
+    print "La nota", nota, "esta alterada en el compás", compas
