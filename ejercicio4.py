@@ -1,19 +1,7 @@
 # -*- coding: utf-8 -*-
 def conv_notas(nota1):
-    if nota1 == "C":
-        print "do"
-    elif nota1 == "D":
-        print "re"
-    elif nota1 == "E":
-        print "mi"
-    elif nota1 == "F":
-        print "fa"
-    elif nota1 == "G":
-        print "sol"
-    elif nota1 == "A":
-        print "la"
-    else:
-        print "si"
+    notas={"C":"do","D":"re","E":"mi","F":"fa","G":"sol","A":"la","B":"si"}
+    return notas[nota1]
 
 
 from lxml import etree
@@ -33,8 +21,8 @@ for elem in raiz.find("part"):
 if clave == "sol":
     print "Todas las notas de la clave de sol"
     for nota in sol:
-        conv_notas(nota)
+        print conv_notas(nota)
 elif clave == "fa":
     print "Todas las notas de la clave de fa"
     for nota in fa:
-        conv_notas(nota)
+        print conv_notas(nota)

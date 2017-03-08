@@ -1,19 +1,8 @@
 # -*- coding: utf-8 -*-from lxml import etree
 def conv_notas(nota1):
-    if nota1 == "C":
-        return "do"
-    elif nota1 == "D":
-        return "re"
-    elif nota1 == "E":
-        return "mi"
-    elif nota1 == "F":
-        return "fa"
-    elif nota1 == "G":
-        return "sol"
-    elif nota1 == "A":
-        return "la"
-    else:
-        return "si"
+    notas={"C":"do","D":"re","E":"mi","F":"fa","G":"sol","A":"la","B":"si"}
+    return notas[nota1]
+
 
 from lxml import etree
 doc = etree.parse('MozartPianoSonata.xml')
